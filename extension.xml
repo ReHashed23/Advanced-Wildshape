@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root version="3.0" release="8.1|CoreRPG:5">
+	<properties>
+		<name> Advanced Wildshape 5E</name>
+		<version>2.0</version>
+		<author>MyGivinOpinion</author>
+		<description>Makes Wildshape Hasslefree</description>
+		<ruleset>
+			<name>5E</name>
+		</ruleset>
+	</properties>
+  
+	<announcement text="Advanced Wildshape" font="emotefont" icon="MGO" />
+  
+	<base>
+		<!-- Modified Files -->
+		<includefile source="strings_simply_shapechange.xml"/>
+		<includefile source="campaign/record_char_actions.xml" />
+		<!-- Define Managers -->
+		<script name="CharMan2" file="scripts/manager_char_mod.lua"/>
+		<script name="ActionDamage" file="scripts/manager_action_damage.lua"/>
+		<!-- Define Images -->
+		<icon name="MGO" file="graphics/icons/MGO.png"/>
+	</base>
+</root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+	File: strings_generic_actions.xml
+  	Author: SilentRuin
+	Copyright © 2020
+	This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+	https://creativecommons.org/licenses/by-nc-sa/4.0/
+-->
+
+<!-- NOTE: 5E strings are also used for display names of capabilities and skills (..5E\strings\strings_5e.xml)-->
+<!-- NOTE: all debugging and code error messages (which should not normally be displayed) will have to be changed in .lua files as they are code specific -->
+
+<root>
+	
+	<!-- Define strings for generic actions -->
+	
+	<string name="simplyshapechange">Advanced Wildshape</string>
+	<string name="grouping">Choose Group</string>
+	<string name="choose_shape">Choose Shape</string>
+	<string name="process_change">Process</string>
+	<string name="revert_change">Revert</string>
+	<string name="option_header_simple_shapechange">Advanced Wildshape</string>
+	<string name="disguise_self">Disguise Self</string>
+	<string name="wildshape">Wildshape</string>
+	<string name="polymorph">Polymorph</string>
+	<string name="true">True Polymorph</string>
+	<string name="shapechange">Shapechange</string>
+	<string name="option_label_share">Share NPC Stats?</string>
+	<string name="option_label_core_books">Would you like to share Monsters from sources other than PHB, DMG, MM, Volo, and Mord's? **WARNING** Doing so may mag your system lag if you have lots of creature content. Fix is posted on forum page. Proceed with EXTREME caution.</string>
+	<string name="option_shape_true">Yes</string>
+	<string name="option_shape_false">No</string>
+
+	<string name="item_label_AC">AC</string>
+	<string name="shapechange_size_label">Size</string>
+	<string name="shapechange_speed_label">Speed</string>
+</root>
