@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root version="3.0" release="8.1|CoreRPG:5">
 	<properties>
-		<name> Advanced Wildshape 5E</name>
+		<name>Feature: Advanced Wildshape</name>
 		<version>2.0</version>
 		<author>MyGivinOpinion</author>
 		<description>Makes Wildshape Hasslefree</description>
