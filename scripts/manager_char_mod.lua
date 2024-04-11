@@ -80,7 +80,7 @@ function onInit()
             -- default = "false"
         -- }
     -- );
-	if User.isHost() then
+	if Session.IsHost then
 		Module.addEventHandler("onModuleLoad", addModuleData);
 	end
 	OOBManager.registerOOBMsgHandler(OOB_MSGTYPE_PROCESS_CHANGE, self.storePlayerData);
@@ -170,7 +170,7 @@ function filterWildshapeDB()
 	for _,vShapechange in ipairs(DB.getChildList(DB.getRoot(), "shapechange_forms")) do
 		--Filter out desired characteristics before inserting
 		local formToFilter;
-		if User.isHost() then
+		if Session.IsHost then
 			formToFilter = DB.findNode(DB.getValue(vShapechange, "noderef"));
 		else
 			self.OOBFilterDB(DB.getValue(vShapechange, "noderef"));
@@ -239,7 +239,7 @@ function filterShapechangeDB()
 	for _,vShapechange in ipairs(DB.getChildList(DB.getRoot(), "shapechange_forms")) do
 		--Filter out desired characteristics before inserting
 		local formToFilter;
-		if User.isHost() then
+		if Session.IsHost then
 			formToFilter = DB.findNode(DB.getValue(vShapechange, "noderef"));
 		else
 			self.OOBFilterDB(DB.getValue(vShapechange, "noderef"));
@@ -297,7 +297,7 @@ function filterPolymorphDB()
 	for _,vShapechange in ipairs(DB.getChildList(DB.getRoot(), "shapechange_forms")) do
 		--Filter out desired characteristics before inserting
 		local formToFilter;
-		if User.isHost() then
+		if Session.IsHost then
 			formToFilter = DB.findNode(DB.getValue(vShapechange, "noderef"));
 		else
 			self.OOBFilterDB(DB.getValue(vShapechange, "noderef"));
@@ -383,7 +383,7 @@ function filterTrueDB()
 	for _,vShapechange in ipairs(DB.getChildList(DB.getRoot(), "shapechange_forms")) do
 		--Filter out desired characteristics before inserting
 		local formToFilter;
-		if User.isHost() then
+		if Session.IsHost then
 			formToFilter = DB.findNode(DB.getValue(vShapechange, "noderef"));
 		else
 			self.OOBFilterDB(DB.getValue(vShapechange, "noderef"));
@@ -450,7 +450,7 @@ function filterDisguiseDB()
 	for _,vShapechange in ipairs(DB.getChildList(DB.getRoot(), "shapechange_forms")) do
 		--Filter out desired characteristics before inserting
 		local formToFilter;
-		if User.isHost() then
+		if Session.IsHost then
 			formToFilter = DB.findNode(DB.getValue(vShapechange, "noderef"));
 		else
 			self.OOBFilterDB(DB.getValue(vShapechange, "noderef"));
@@ -483,6 +483,7 @@ function filterDisguiseDB()
 	return tCompiledDisguiseList;
 end
 function filterDB(msgOOB)
+	Debug.chat("bmos")
 	Debug.chat(msgOOB.form);
 	nodeForm = DB.findNode(msgOOB.form);
 	Debug.chat(nodeForm);
