@@ -83,9 +83,9 @@ function onInit()
 	if User.isHost() then
 		Module.addEventHandler("onModuleLoad", addModuleData);
 	end
-	OOBManager.registerOOBMsgHandler("process_change", self.storePlayerData);
-	OOBManager.registerOOBMsgHandler("restore_change", self.restorePlayerData);
-	OOBManager.registerOOBMsgHandler("filter_db", self.filterDB);
+	OOBManager.registerOOBMsgHandler(OOB_MSGTYPE_PROCESS_CHANGE, self.storePlayerData);
+	OOBManager.registerOOBMsgHandler(OOB_MSGTYPE_RESTORE_CHANGE, self.restorePlayerData);
+	OOBManager.registerOOBMsgHandler(OOB_MSGTYPE_FILTER_DB, self.filterDB);
 	fApplyDamage = ActionDamage.applyDamage;
 	ActionDamage.applyDamage = myApplyDamage;
 end
